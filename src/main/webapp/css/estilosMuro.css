@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: lemonchiffon;
+}
+
+.principal{
+    width: 70%;
+    margin-left: 15%;
+    background-color: #ffff66;
+}
+#cabecera{
+     background-color: #523ce6;
+     padding-top: 25px;
+}
+#contenidosMuro{
+    background-color: #ffff66;
+}
+#murosAmigos{
+    background-color: #EEEEEE;
+}
+#murosAmigosPrincipal{
+    background-color: #ffff66;
+}
+#relacionesPrincipal{
+    background-color: #ffff66;
+}
+#fondo{
+    background-color: #523ce6;
+}
+#rotulo{
+    font-family: "Brush Script MT", cursive;
+    font-size: 60px;  
+    color:#ffffff;
+    text-align: center;
+    /*padding-left: 140px;*/
+}
+#rotuloCotenidos{
+    font-family: "Brush Script MT", cursive;
+    font-size: 35px;  
+    color:#523ce6;
+}
+#rotuloPublicar{
+    padding-left: 300px;
+    background-color:#523ce6;
+}
+
+#rotuloSiMuros{
+    font-family: "Brush Script MT", cursive;
+    font-size: 16px;  
+    color:#1C94C4;
+    padding-left: 52px;
+}
+#rotuloMensajes{
+    font-family: "Brush Script MT", cursive;
+    font-size: 25px; 
+}
+#rotuloMuros{
+    font-family: "Brush Script MT", cursive;
+    font-size: 35px;
+    color: #523ce6;
+    background-color: #ffff66}
+
+#crearMensaje{
+    font-family: "Brush Script MT", cursive;
+    font-size: 25px;
+    width: 210px;
+    height:50px;
+}
+
+#tabAmigos{
+    font-family: "Brush Script MT", cursive;
+    font-size: 20px;
+}
+#tabnAmigos{
+    font-family: "Brush Script MT", cursive;
+    font-size: 20px;
+}
+.izquierda{
+    float: left;
+}
+.derecha{
+    float: right;
+}
+#cuerpo{
+    border-color: #000000;
+}
+.clear{
+    clear: both;    
+}
+#abajo{
+    background-color: #523ce6;
+    height: 20px;
+    color:#ffffff;
+    text-align: right;
+    font-size: 10px;
+    padding-top: 3px;
+}
+.enlacesMuro{
+    font-family: "Brush Script MT", cursive;
+    font-size: 25px;  
+    color:#1C94C4;
+    padding-left: 40px;
+}
+.enlacesAmigos{
+    font-family: "Brush Script MT", cursive;
+    font-size: 25px;  
+    color:#1C94C4;
+    padding-left: 10px;
+}
+
+#retorno{
+    padding-top: 10px;
+    font-family: "Brush Script MT", cursive;
+    font-size: 25px;  
+    text-align: center;
+}
+
+#vuelveEwall{
+    color: #ffffff;
+}
+
+#relleno{
+    width: 90%;
+    height: 100%;
+}
+#pie{
+     background-color: #523ce6;
+     height: 27px;
+}

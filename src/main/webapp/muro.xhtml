@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+    </h:head>
+
+    <h:body>
+        <h:panelGrid>
+            <h3>Mensajes</h3>  
+            <p:dataList value="#{muroControladorJSF.mensajes}" var="mensaje" itemType="none"> 
+                <p:column>
+                    <p:panel header="#{mensaje.resumen}" toggleable="true" closable="true" toggleSpeed="500" closeSpeed="500" >  
+                        <h:outputText value="#{mensaje.texto}" />                         
+                    </p:panel>  
+                </p:column>
+            </p:dataList> 
+            <h:messages/>
+        </h:panelGrid>
+    </h:body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+    </h:head>
+
+    <h:body>
+        <h:form id="login">
+            <h:panelGrid columns="2">
+               
+                <h:outputLabel value="Correo electrónico: " for="emailLogin" />
+                <p:inputText value="#{altaControladorJSF.cuenta.email}" id="emailLogin" title="email" required="true"/>
+
+                <h:outputLabel value="Contraseña: " for="passwordLogin" />
+                <p:password value="#{altaControladorJSF.cuenta.password}" id="passwordLogin" title="password" required="true"/>
+
+                <h:commandButton value="Login" action="#{altaControladorJSF.login()}"/>
+            </h:panelGrid>
+            <h:messages/>
+        </h:form>
+        <h:form id="form">
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Nombre: " for="nombre" />
+                <p:inputText value="#{altaControladorJSF.cuenta.nombre}" id="nombre" title="nombre" required="true"/>
+
+                <h:outputLabel value="Apellidos: " for="apellidos" />
+                <p:inputText value="#{altaControladorJSF.cuenta.apellidos}" id="apellidos" title="apellidos"/>
+
+                <h:outputLabel value="Fecha de nacimiento: " for="fechaNacimiento" />
+                <p:calendar effect="slideDown" navigator="true" value="#{altaControladorJSF.cuenta.fechaNacimiento}" id="fechaNacimiento" title="fechaNacimiento" required="true">
+                    <f:convertDateTime pattern="dd/mm/yy" />
+                </p:calendar>
+
+                <h:outputLabel value="Correo electrónico: " for="email" />
+                <p:inputText value="#{altaControladorJSF.cuenta.email}" id="email" title="email" required="true"/>
+
+                <h:outputLabel value="Vuelve a introducir el correo: " for="email_again" />
+                <p:inputText id="email_again" title="email_again" required="true"/>
+
+                <h:outputLabel value="Contraseña: " for="password" />
+                <p:password value="#{altaControladorJSF.cuenta.password}" id="password" title="password" required="true"/>
+
+                <h:commandButton value="Dar de alta" action="#{altaControladorJSF.alta()}"/>
+            </h:panelGrid>
+            <h:messages/>
+        </h:form>
+    </h:body>
+
+</html>
